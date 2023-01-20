@@ -1,8 +1,5 @@
 import cv2
 import mediapipe as mp
-from pynput.keyboard import Key, Controller
-
-keyboard = Controller()
 
 cap = cv2.VideoCapture(0)
 
@@ -90,8 +87,6 @@ while True:
     cv2.imshow("Controlador de Midia", image)
 
     # Saia da tela ao pressionar a barra de espaço
-    key = cv2.waitKey(1)
-    if key == 27:
-        break
+  
 
 cv2.destroyAllWindows()
